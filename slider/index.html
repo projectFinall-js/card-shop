@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- enter name title page -->
+  <title>Sliderimage</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- start project -->
+  <!-- create container page -->
+  <div class="container">
+    <!-- create slider -->
+    <div class="slider">
+      <!-- gharar dadan images to slider ke omadim div bandi kardim joda joda -->
+      <div class="slide active">
+        <img src="images/blue.png" alt="Image 1" class="img">
+      </div>
+      <div class="slide">
+        <img src="images/optima.png" alt="Image 2" class="img">
+      </div>
+      <div class="slide">
+        <img src="images/sheyroon.jpeg" alt="Image 3" class="img">
+      </div>
+    </div>
+    <!-- create text car -->
+    <p class="headCar">car</p>
+    <!-- create caption for discription products -->
+    <div class="caption">
+      <!-- create box text -->
+      <div class="textDate">
+        <!-- add icon black  -->
+        <div class="imgText">
+          <img src="./images/product-research.png" alt="icon model product" width="32px">
+          <img src="./images/mony.png" alt="icon price car"  width="29px">
+          <img src="./images/car.png" alt="icon kilometr shomar"  width="45px" id="imgCar">
+          <img src="./images/gas-station.png" alt="icon benzin car"  width="29px" id="imgGas">
+          <img src="./images/shield.png" alt="icon rate car"  width="29px">
+        </div>
+        <!-- add key text for caption -->
+        <div class="keyDate">
+          <h6>Model car:</h6>
+          <h6>Price car:</h6>
+          <h6>Mileage car:</h6>
+          <h6>Fuet:</h6>
+          <h6>Safety:</h6>
+        </div>
+        <!-- add value text for key caption -->
+        <div class="valueDate">
+          <h6>Mercedes Benz</h6>
+          <h6>700000$</h6>
+          <h6>4000 Miles</h6>
+          <h6>25 MPG</h6>
+          <!-- create star for rate be car -->
+          <h6>
+            <div class="rate">
+              <img src="./images/star.png" alt="image stars for rate car">
+              <img src="./images/star.png" alt="image stars for rate car">
+              <img src="./images/star.png" alt="image stars for rate car">
+              <img src="./images/star.png" alt="image stars for rate car">
+            </div>
+          </h6>
+        </div>
+      </div>
+    </div>
+    <!-- box select color for clicked -->
+    <h5 class="selectColor">pick a color:</h5>
+    <!-- box noghteha or dots -->
+    <div class="dots">
+      <!--  create dot 1 + style color-->
+      <span class="dot active" style="background-color: rgb(165, 0, 44);" id="dotBlue"></span>
+      <!--  create dot 2 + style color-->
+      <span class="dot" style="background-color: rgb(127, 0, 246);" id="dotPurple"></span>
+      <!--  create dot 3 + style color-->
+      <span class="dot" style="background-color: rgb(4, 1, 159);" id="dotRed"></span>
+
+    </div>
+    <!-- create button for add cart -->
+    <button class="btnShop" onclick="clickBtn()"> Add To Cart</button>
+  </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
