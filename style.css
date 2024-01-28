@@ -107,8 +107,7 @@
   /* style rating car for flex ghara dadan stars */
   .rate{
     width: 60px;
-    display: flex;
-    flex-direction: row;
+   display: flex;
   
   }
   /* style value text for caption */
