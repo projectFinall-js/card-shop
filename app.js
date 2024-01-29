@@ -46,5 +46,58 @@ function clickBtn(){
   btnShop.style.fontSize="17px" //style dadan be matn dokme
 }
 
+/* neshan daden moshakhasat */
+
+// const button = document.querySelector('.btnShop');
+// const details = document.querySelector('.details-m');
+
+// button.addEventListener('click', function () {
+//     // Set the car details
+//     document.getElementById('carName-m').innerText = 'مرسدس بنز';
+//     document.getElementById('carPrice-m').innerText = '70000$';
+//     document.getElementById('carColor-m').innerText = 'رنگ ماشین';
+//     document.getElementById('carMileage-m').innerText = '';
+
+//     // Show the details
+//     details.style.display = 'block';
+// });
+
+// const btnShop = document.querySelector('.btnShop');
+
+// btnShop.addEventListener('click', function() {
+//   const color = btnShop.style.backgroundColor;
+  
+//   switch(colorr) {
+//     case 'red':
+//       showDetails('Red', '3000$', 'Mobin', '2023', 'Automatic');
+//       break;
+//     case 'blue':
+//       showDetails('Blue', '4000$', 'Mobin', '2023', 'Manual');
+//       break;
+//     case 'purple':
+//       showDetails('Purple', '5000$', 'Mobin', '2023', 'CVT');
+//       break;
+//     default:
+//       showAlert('Please select a color before adding to cart.');
+//   }
+// });
+
+// function showDetails(colorr, pricee, namee, yearr, gearboxx) {
+//   const details = document.querySelector('.details');
+//   details.innerHTML = `
+//     <p>Color: ${colorr}</p>
+//     <p>Price: ${pricee}</p>
+//     <p>Name: ${namee}</p>
+//     <p>Year: ${yearr}</p>
+//     <p>Gearbox: ${gearboxx}</p>
+//   `;
+//   details.style.display = 'block';
+// }
+
+// function showAlert(messagee) {
+//   alert(messagee);
+// }
+
+
 
 

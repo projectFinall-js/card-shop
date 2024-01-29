@@ -4,12 +4,12 @@
 <head>
     <title>نمایش اطلاعات محصول</title>
     <style>
-        .container {
+        .container-m {
             padding: 20px;
             text-align: center;
         }
 
-        .btn {
+        .btn-m {
             background-color: #4CAF50;
             color: white;
             padding: 10px 20px;
@@ -18,21 +18,21 @@
             font-size: 16px;
         }
 
-        .details {
+        .details-m {
             margin-top: 20px;
             display: none;
         }
 
-        .details p {
+        .details-m p {
             margin-bottom: 5px;
         }
 
-        .container {
+        .container-m {
             padding: 20px;
             text-align: center;
         }
 
-        .btn {
+        .btn-m {
             background-color: #4CAF50;
             color: white;
             padding: 10px 20px;
@@ -41,40 +41,41 @@
             font-size: 16px;
         }
 
-        .details {
+        .details-m {
             margin-top: 20px;
             display: none;
         }
 
-        .details p {
+        .details-m p {
             margin-bottom: 5px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-m">
         <h1>مشخصات خرید محصول</h1>
-        <button class="btn">نمایش مشخصات</button>
-        <div class="details">
-            <p>نام ماشین: <span id="carName"></span></p>
-            <p>قیمت ماشین: <span id="carPrice"></span></p>
-            <p>رنگ ماشین: <span id="carColor"></span></p>
-            <p>چند کیلومتر راه می‌رود: <span id="carMileage"></span></p>
+
+        <button class="btn-m">نمایش مشخصات</button>
+        <div class="details-m">
+            <p>نام ماشین: <span id="carName-m"></span></p>
+            <p>قیمت ماشین: <span id="carPrice-m"></span></p>
+            <p>رنگ ماشین: <span id="carColor-m"></span></p>
+            <p>چند کیلومتر راه می‌رود: <span id="carMileage-m"></span></p>
             <p>امیدوارم به خوبی از خریدتان استفاده کنید.</p>
         </div>
     </div>
 
     <script>
-        const button = document.querySelector('.btn');
-        const details = document.querySelector('.details');
+        const button = document.querySelector('.btn-m');
+        const details = document.querySelector('.details-m');
 
         button.addEventListener('click', function () {
             // Set the car details
-            document.getElementById('carName').innerText = 'مرسدس بنز';
-            document.getElementById('carPrice').innerText = '70000$';
-            document.getElementById('carColor').innerText = 'رنگ ماشین';
-            document.getElementById('carMileage').innerText = '';
+            document.getElementById('carName-m').innerText = 'مرسدس بنز';
+            document.getElementById('carPrice-m').innerText = '70000$';
+            document.getElementById('carColor-m').innerText = 'رنگ ماشین';
+            document.getElementById('carMileage-m').innerText = '';
 
             // Show the details
             details.style.display = 'block';
@@ -84,3 +85,28 @@
 </body>
 
 </html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ #myButton { background-color: transparent; border: none; color: white; font-size: 16px; cursor: pointer; } #info { display: none; } body { background-color: #ccc; } .button-red { background-color: red; } .button-purple { background-color: purple; } .button-blue { background-color: blue; }
+    </style>
+</head>
+<body>
+    
+     <button id="myButton">نمایش مشخصات</button> <div id="info"><p>ss</p>
+     <p>ss</p>
+     <p>ss</p>
+     </div> 
+    <script>
+
+ document.getElementById('myButton').addEventListener('click', function() { var infoDiv = document.getElementById('info'); infoDiv.innerHTML = 'نام ماشین: مرسدس بنز<br>' + 'قیمت ماشین: $50000<br>' + 'رنگ ماشین: قرمز<br>' + 'چند کیلومتر راه می‌رود: 10000<br>' + 'امیدوارم به خوبی از خریدتان استفاده کنید.'; infoDiv.style.display = 'block'; var buttonBackground = getComputedStyle(this).backgroundColor; if (buttonBackground === 'rgb(255, 0, 0)') { infoDiv.className = 'button-red'; } else if (buttonBackground === 'rgb(128, 0, 128)') { infoDiv.className = 'button-purple'; } else if (buttonBackground === 'rgb(0, 0, 255)') { infoDiv.className = 'button-blue'; } });
+    </script>
+</body>
+</html> -->

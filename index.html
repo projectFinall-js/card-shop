@@ -8,6 +8,40 @@
   <title>Sliderimage</title>
   <!-- link css -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* اضافه کردن استایل به دکمه
+    .red {
+        background-color: red;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .purple {
+        background-color: purple;
+    } */
+
+       /* اضافه کردن استایل به دکمه */
+       .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        /* استایل برای نمایش مشخصات */
+        #carDetails {
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+</style>
 </head>
 
 <body>
@@ -81,16 +115,58 @@
 
     </div>
     <!-- create button for add cart -->
-    <button class="btnShop" onclick="clickBtn()"> Add To Cart</button>
+    <button id="addToCartBtn" class="btnShop" onclick="clickBtn()"> Add To Cart</button>
+    <div id="carDetails"></div>
    
   </div>
   </div>
+
+
   <!--  -->
-
-
+    
+<!--     <button id="addToCartBtn" class="red">Add to Cart</button> -->
   <!--  -->
 
   <script src="app.js"></script>
+  <script>
+    // // اضافه کردن رویداد کلیک به دکمه
+    // document.getElementById("addToCartBtn").addEventListener("click", function() {
+    //     let button = document.getElementById("addToCartBtn");
+    //     let color = button.style.backgroundColor;
+    //     let description = "";
+
+    //     // بررسی رنگ دکمه و تنظیم مشخصات مناسب
+    //     if (color === "red") {
+    //         description = "ی color:red";
+    //     } else if (color === "blue") {
+    //         description = "قیمت:۳ اسم: مبین سال تولید:۲۳ گربکس:الکی color:blue";
+    //     } else if (color === "purple") {
+    //         description = "قیمت:۳ اسم: مبین سال تولید:۲۳ گربکس:الکی color:purple";
+    //     }
+
+    //     // نمایش مشخصات به صورت یک هشدار
+    //     alert(description);
+    // });
+       // اضافه کردن رویداد کلیک به دکمه
+       document.getElementById("addToCartBtn").addEventListener("click", function() {
+            var button = document.getElementById("addToCartBtn");
+            var color = button.style.backgroundColor;
+            var description = "";
+            var carDetailsDiv = document.getElementById("carDetails");
+
+            // بررسی رنگ دکمه و تنظیم مشخصات مناسب
+            if (color === "red") {
+                description = "قیمت:۳ اسم: مبین سال تولید:۲۳ گربکس:الکی color:red";
+            } else if (color === "blue") {
+                description = "قیمت:۳ اسم: مبین سال تولید:۲۳ گربکس:الکی color:blue";
+            } else if (color === "purple") {
+                description = "قیمت:۳ اسم: مبین سال تولید:۲۳ گربکس:الکی color:purple";
+            }
+
+            // نمایش مشخصات درون المان div
+            carDetailsDiv.innerText = description;
+        });
+</script>
 </body>
 
 </html>
