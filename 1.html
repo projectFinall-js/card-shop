@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>نمایش اطلاعات محصول</title>
+    <style>
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .details {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .details p {
+            margin-bottom: 5px;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .details {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .details p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>مشخصات خرید محصول</h1>
+        <button class="btn">نمایش مشخصات</button>
+        <div class="details">
+            <p>نام ماشین: <span id="carName"></span></p>
+            <p>قیمت ماشین: <span id="carPrice"></span></p>
+            <p>رنگ ماشین: <span id="carColor"></span></p>
+            <p>چند کیلومتر راه می‌رود: <span id="carMileage"></span></p>
+            <p>امیدوارم به خوبی از خریدتان استفاده کنید.</p>
+        </div>
+    </div>
+
+    <script>
+        const button = document.querySelector('.btn');
+        const details = document.querySelector('.details');
+
+        button.addEventListener('click', function () {
+            // Set the car details
+            document.getElementById('carName').innerText = 'مرسدس بنز';
+            document.getElementById('carPrice').innerText = '70000$';
+            document.getElementById('carColor').innerText = 'رنگ ماشین';
+            document.getElementById('carMileage').innerText = '';
+
+            // Show the details
+            details.style.display = 'block';
+        });
+
+    </script>
+</body>
+
+</html>

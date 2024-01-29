@@ -45,3 +45,6 @@ function clickBtn(){
   btnShop.textContent="ok"; //taghire matn button
   btnShop.style.fontSize="17px" //style dadan be matn dokme
 }
+
+
+
